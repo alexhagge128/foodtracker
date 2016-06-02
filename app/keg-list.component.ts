@@ -19,7 +19,7 @@ import { NewKegComponent } from './new-keg.component';
       <h4>Pints Left: {{currentKeg.pintCount}}</h4>
     </div>
     <edit-keg-details *ngIf="selectedKeg" [keg]="selectedKeg"></edit-keg-details>
-    <new-keg></new-keg>
+    <new-keg (onSubmitNewKeg)="createKeg($event)"></new-keg>
   `
 })
 
@@ -34,7 +34,9 @@ export class KegListComponent {
     this.selectedKeg = clickedKeg;
     this.onKegSelect.emit(clickedKeg);
   }
-
+  createKeg(newKeg: Keg): void {
+    this.kegList.push(newKeg);
+  }
   // kegWasTapped(tappedKeg: Keg): void {
   //   tappedKeg.pintCount -= 1;
   // }
