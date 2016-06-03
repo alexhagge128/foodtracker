@@ -12,9 +12,7 @@ import { NewFoodComponent } from './newfoodcomponent';
 export class FoodListComponent {
   public foodList: Food[];
 
-  createFood(name: string, detail: string, calories: number): void {
-    this.foodList.push(
-      new Food(name, detail, calories)
-    );
+  createFood(newFood: Food): void {
+    this.foodList.push(newFood);
   }
 }

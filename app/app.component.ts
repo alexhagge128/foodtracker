@@ -16,8 +16,9 @@ export class AppComponent {
     constructor(){
       this.foods = [
         new Food("Burger", "I neeeed it!", 500),
+        new Food("Milkshake", "I neeeed it!", 50),
         new Food("Fries", "I neeeed it!", 300),
-        new Food("Milkshake", "I neeeed it!", 50)
+        new Food("Celery", "Have to redeem myself!", 0)
       ]
     }
 }
