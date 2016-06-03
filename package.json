@@ -1,5 +1,5 @@
 {
-  "name": "angular2-skeleton-app",
+  "name": "foodtracker",
   "version": "1.0.0",
   "scripts": {
     "start": "npm run tsc:w",
@@ -22,6 +22,7 @@
   "devDependencies": {
     "bower-files": "^3.11.3",
     "browser-sync": "^2.11.1",
+    "browserify": "^13.0.1",
     "concurrently": "^2.0.0",
     "del": "^2.2.0",
     "gulp": "^3.9.1",
@@ -34,5 +35,16 @@
     "lite-server": "^2.1.0",
     "typescript": "^1.8.2",
     "typings": "^0.6.8"
-  }
+  },
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexhagge128/taproom-angular.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/alexhagge128/taproom-angular/issues"
+  },
+  "homepage": "https://github.com/alexhagge128/taproom-angular#readme",
+  "description": ""
 }

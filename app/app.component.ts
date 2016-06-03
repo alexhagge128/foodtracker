@@ -1,32 +1,21 @@
-import { Component, EventEmitter } from 'angular2/core';
-import { KegListComponent } from './keg-list.component';
-import { Keg } from './keg.model';
+import { Component } from 'angular2/core';
+import { Food } from './food.model';
+import { FoodListComponent } from './foodlist.component';
 
-//------AppComponent----------------------
+
 @Component({
   selector: 'my-app',
-  directives: [KegListComponent],
-  template: `
-  <div class="container">
-    <h1>Kegs on Tap</h1>
-    <keg-list
-      [kegList]="kegs"
-      (onKegSelect)="kegWasSelected($event)">
-    </keg-list>
-
-  </div>
-  `
+  templateUrl: 'app/app.component.html',
+  directives: [FoodListComponent]
 })
 export class AppComponent {
-  public kegs: Keg[];
-  constructor(){
-    this.kegs = [
-      new Keg("Stout", "Guinness", 6, 4, 124),
-      new Keg("Pilsner", "Trumer", 5, 5, 124),
-      new Keg("IPA", "Terminal Gravity", 5, 7, 124),
-    ];
-  }
-  kegWasSelected(clickedKeg: Keg): void {
-    console.log(clickedKeg);
-  }
+    foods: Food[];
+
+    constructor(){
+      this.foods = [
+        new foods("Burger", "I neeeed it!", 500),
+        new foods("Burger", "I neeeed it!", 500),
+        new foods("Burger", "I neeeed it!", 500),
+      ]
+    }
 }

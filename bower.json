@@ -1,12 +1,12 @@
 {
-  "name": "angular2-skeleton-app",
+  "name": "foodtracker",
   "description": "",
   "main": "",
   "authors": [
     "alexhagge128 <alexhagge128@gmail.com>"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/alexhagge128/taproom-angular",
   "ignore": [
     "**/.*",
     "node_modules",
