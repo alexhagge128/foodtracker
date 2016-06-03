@@ -5,17 +5,18 @@ import { FoodListComponent } from './foodlist.component';
 
 @Component({
   selector: 'my-app',
+  directives: [FoodListComponent],
   templateUrl: 'app/app.component.html',
-  directives: [FoodListComponent]
+
 })
 export class AppComponent {
-    foods: Food[];
+    public foods: Food[];
 
     constructor(){
       this.foods = [
-        new foods("Burger", "I neeeed it!", 500),
-        new foods("Burger", "I neeeed it!", 500),
-        new foods("Burger", "I neeeed it!", 500),
+        new Food("Burger", "I neeeed it!", 500),
+        new Food("Fries", "I neeeed it!", 300),
+        new Food("Milkshake", "I neeeed it!", 50)
       ]
     }
 }
