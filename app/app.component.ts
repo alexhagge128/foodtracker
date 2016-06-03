@@ -1,6 +1,7 @@
 import { Component } from 'angular2/core';
 import { Food } from './food.model';
 import { FoodListComponent } from './foodlist.component';
+import { NewFoodComponent } from './newfoodcomponent';
 
 
 @Component({

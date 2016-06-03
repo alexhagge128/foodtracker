@@ -3,7 +3,6 @@ import {Food} from './food.model';
 
 @Component({
   selector: 'new-food',
-  //inputs:
   outputs: ['onSubmitNewFood'],
   templateUrl: 'app/newfoodcomponent.html'
 })
@@ -13,9 +12,11 @@ export class NewFoodComponent {
   constructor() {
     this.onSubmitNewFood = new EventEmitter();
   }
-  addFood(userName: HTMLInputElement, userDetail: HTMLInputElement, userCal: HTMLInputElement) {
-    var convertedCal: number = parseFloat(userCal.value);
-    var newFood = new Food(userName.value, userDetail.value, convertedCal);
-    this.onSubmitNewFood.emit(newFood);
+  addFood(userName: HTMLInputElement, userDetail: HTMLInputElement, userCalories: HTMLInputElement) {
+    this.onSubmitNewFood.emit(userName.value, userDetail.value, userCalories.value);
+    userName.value = "";
+    userDetail.value = "";
+    userCalories.value = "";
+
   }
 }
