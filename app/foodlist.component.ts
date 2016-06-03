@@ -1,4 +1,5 @@
 import { Component } from 'angular2/core';
+import { Food } from './food.model';
 
 @Component({
   selector: 'foodlist',
@@ -9,3 +10,4 @@ import { Component } from 'angular2/core';
 export class FoodListComponent {
 
 }
+  
