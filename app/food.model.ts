@@ -1,15 +1,9 @@
-export class Food {
-  // name: string;
-  // detail: string;
-  // calories: number;
 
-  constructor(
-    public name: string,
-    public detail: string,
-    public calories: number
-  ) {
-    this.name = name;
-    this.detail = detail;
-    this.calories = calories;
+
+//-----Food---
+export class Food {
+  public highCal: boolean = false;
+  constructor(public name: string, public description: string, public calories: number, public id: number) {
+
   }
 }
