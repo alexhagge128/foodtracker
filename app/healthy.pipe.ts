@@ -5,7 +5,7 @@ import { Food } from './food.model';
   name: "healthy",
   pure: false
 })
-export class HealthyPipe implements Pipetransform {
+export class HealthyPipe implements PipeTransform {
   transform(input: Food[], args) {
 
     var healthState = args[0];
